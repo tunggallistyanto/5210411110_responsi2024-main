@@ -55,13 +55,15 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Center(
-              child: Image.asset(
-                'assets/images/Logo Responsi.png', // Ganti dengan path logo Anda
-                width: 200,
-                height: 200,
-              ),
+            // Logo
+            Image.asset(
+              'assets/images/Logo Responsi.png', // Ganti dengan path logo Anda
+              width: 200,
+              height: 200,
             ),
+            const SizedBox(height: 20), // Jarak antara logo dan indikator
+            // Indikator loading
+            const CircularProgressIndicator(),
           ],
         ),
       ),
